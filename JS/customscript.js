@@ -63,7 +63,8 @@ function createAboutme(data){
   let bloc = createStandardElement("div", "cv-aboutme-bloc", '')
   createPI(bloc, data.part1);
   createDev(bloc, data.part2);
-  createDev(bloc, data.part3);
+  createLang(bloc, data.part3);
+  createHobbies(bloc, data.part4);
   barLeft = bindElement(barLeft, bloc);
 }
 
@@ -100,17 +101,10 @@ function createPI(element, data){
     element = bindElement(element, elementP);
 }
 
-function createDev(element, data){
-  console.log("/createDev");
-  let titlePart = '';
-  if(data.competences != undefined){
-    titlePart = data.competences;
-  }else{
-    titlePart = data.langues;
-  }
+function createLang(element, data){
+  console.log("/createLang");
 
-
-  let title = createStandardElement("div", 'cv-left-title', titlePart);
+  let title = createStandardElement("div", 'cv-left-title', data.langues);
   let liste = createStandardElement("ul", 'cv-personnal-info', '');
   for(i in data.liste){
     let competence = createStandardElement("li", '', data.liste[i][0]+" : "+ data.liste[i][1]);
@@ -124,59 +118,82 @@ function createDev(element, data){
   element = bindElement(element, elementP);
 }
 
+function createHobbies(element, data){
+  console.log("/createHobbies");
+
+  let title = createStandardElement("div", 'cv-left-title', data.hobbies);
+  let liste = createStandardElement("ul", 'cv-personnal-info', '');
+  for(i in data.liste){
+    let hobbie = createStandardElement("li", '', data.liste[i]);
+    liste = bindElement(liste, hobbie);
+  }
+
+  let elementP = createStandardElement("div", '', '');
+  elementP = bindElement(elementP, title);
+  elementP = bindElement(elementP, liste);
+
+  element = bindElement(element, elementP);
+}
+
+function createDev(element, data){
+  console.log("/createDev");
+
+  let title = createStandardElement("div", 'cv-left-title', data.competences);
+  let liste = createStandardElement("ul", 'cv-personnal-info', '');
+  for(i in data.liste){
+    let categorie = createStandardElement("li", '', i+" :");
+    for(j in data.liste[i]){
+      let competence = createStandardElement("li", "padding-standard-left", data.liste[i][j]);
+      categorie = bindElement(categorie, competence);
+    }
+    liste = bindElement(liste, categorie);
+  }
+
+  let elementP = createStandardElement("div", '', '');
+  elementP = bindElement(elementP, title);
+  elementP = bindElement(elementP, liste);
+
+  element = bindElement(element, elementP);
+}
+
 function createCvParts(data){
   console.log("/createCvParts");
   document.getElementById("cvTitle").innerHTML = data.cv_title;
   for(i in data.cv_parts){
-    let text = document.createTextNode(i);
+    let title = createStandardElement("div", "cv-part-title", i);
 
-    let title = document.createElement("div");
-    title.className = 'cv-part-title';
-    title.appendChild(text);
+    let part = createStandardElement("div", "cv-part", '');
 
-    let part = document.createElement("div");
-    part.className = 'cv-part';
-    let content = document.createElement("div");
-    content.className = 'cv-part-content d-flex flex-column';
-    content = fillParts(data.cv_parts[i], content)
-    part.appendChild(title);
-    part.appendChild(content);
+    let content = createStandardElement("div", "cv-part-content d-flex flex-column", '');
+    content = fillParts(data.cv_parts[i], content);
 
+    part = bindElement(part, title);
+    part = bindElement(part, content);
 
-    let bloc = document.getElementById("cvParts");
-    bloc.appendChild(part);
+    let bloc = getElement("cvParts");
+    bloc = bindElement(bloc, part);
+
   }
 }
 
 function fillParts(data, element){
   console.log("/fillParts");
   for(i in data){
-    let date = document.createTextNode(data[i][0]);
-    let left = document.createElement("div");
-    left.className = 'cv-line-left';
-    left.appendChild(date);
+    let left = createStandardElement("div", "cv-line-left", data[i][0]);
 
-    let diploma = document.createTextNode(data[i][1]);
-    let dBlock = document.createElement("div");
-    dBlock.className = 'cv-line-right-diploma';
-    dBlock.appendChild(diploma);
+    let dBlock = createStandardElement("div", "cv-line-right-diploma", data[i][1]);
 
-    let school = document.createTextNode(data[i][2]);
-    let sBlock = document.createElement("div");
-    sBlock.className = 'cv-line-right-school';
-    sBlock.appendChild(school);
+    let sBlock = createStandardElement("div", "cv-line-right-school", data[i][2]);
 
-    let right = document.createElement("div");
-    right.className = 'cv-line-right';
-    right.appendChild(dBlock);
-    right.appendChild(sBlock);
+    let right = createStandardElement("div", "cv-line-right", '');
+    right = bindElement(right, dBlock);
+    right = bindElement(right, sBlock);
 
-    let line = document.createElement("div");
-    line.className = 'cv-line d-flex flex-row';
-    line.appendChild(left);
-    line.appendChild(right);
+    let line = createStandardElement("div", "cv-line d-flex flex-row", '');
+    line = bindElement(line, left);
+    line = bindElement(line, right);
 
-    element.appendChild(line);
+    element = bindElement(element, line);
   }
   return element;
 }

@@ -23,6 +23,11 @@
     height: 100%;
 }
 
+/*Padding*/
+.padding-standard-left{
+    padding-left: 1rem;
+}
+
 /****CLASSES****/
 /*Custom Classes*/
 .head-footer-content {
@@ -136,6 +141,7 @@
 body {
     background-image: url("../Ressources/background.jpg");
     background-position: top;
+    background-attachment: fixed;
     background-size: 100%;
     margin: 0;
 }

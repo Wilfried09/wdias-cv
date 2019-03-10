@@ -33,10 +33,19 @@
     },
     "part2":{
       "competences" : "DEVELOPPEMENT",
-      "liste":[
-        ["Systèmes d'exploitations", "Windows XP, 7, 8, 10 - Linux Ubuntu, Debian, Mint"],
-        ["Langages et Frameworks", "HTML, CSS, Javascript, JQuery, JSX, MYSQL, Java, PHP"]
-      ]
+      "liste":{
+        "Systèmes d'exploitation":[
+          "Windows",
+          "Linux"
+        ],
+        "Langages et Frameworks":[
+          "HTML/CSS",
+          "Javascript/JQuery",
+          "JSX",
+          "MYSQL",
+          "PHP"
+        ]
+      }
     },
     "part3":{
       "langues" : "LANGUES ETRANGERES",
@@ -44,6 +53,14 @@
         ["Anglais", "Avancé (B1)"],
         ["Espagnol", "Intermédiaire (A2)"],
         ["Portugais", "Notions"]
+      ]
+    },
+    "part4":{
+      "hobbies" : "INTERETS",
+      "liste":[
+        "Langues étrangères",
+        "Programmation informatique",
+        "High Tech & Nouvelles Technologies"
       ]
     }
   }
