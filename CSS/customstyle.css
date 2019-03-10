@@ -1,0 +1,144 @@
+/****TOOLTIP****/
+/*Position*/
+
+/*Width*/
+.width-100 {
+    width: 100%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+/*Height*/
+.height-100 {
+    height: 100%;
+}
+
+/****CLASSES****/
+/*Custom Classes*/
+.head-footer-content {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.main-content {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 2px grey solid;
+    border-right: 2px grey solid;
+}
+
+.cv-content {
+}
+
+.cv-bar-left {
+    width: 25%;
+    padding: 0.5rem 0;
+    background-image: linear-gradient(to bottom, #0164cf, #0075dc, #0085e9, #0096f4, #00a6ff);
+}
+
+.cv-name {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.cv-personnal-info {
+    font-size: 80%;
+    padding: 0 0.5rem;
+}
+
+.cv-body {
+    width: 75%;
+    padding: 0.5rem 0;
+    border-left: 2px grey solid;
+}
+
+.cv-parts {
+    padding: 0 1rem;
+}
+
+.cv-part-title {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.cv-line {
+    margin: 0.5rem 0;
+    line-height: 1rem;
+}
+
+.cv-line-left {
+    width: 20%;
+}
+
+.cv-line-right {
+    width: 80%;
+}
+
+.cv-line-right-diploma {
+    font-weight: bold;
+}
+
+.cv-line-right-school {
+    font-style: italic;
+    font-size: 90%;
+}
+
+.cv-title {
+    color: white;
+    width: 95%;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 2rem !important;
+    border-radius: 0 10px 10px 0;
+}
+
+.grey-line {
+    position: relative;
+    color: white;
+    background-color: grey;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.cv-profil {
+    position: absolute;
+    bottom: -100%;
+    left: 15%;
+    width: 70%;
+}
+
+/*Targeted Classes*/
+body {
+    background-image: url("../Ressources/background.jpg");
+    background-position: top;
+    background-size: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}

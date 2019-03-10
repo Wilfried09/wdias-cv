@@ -1,0 +1,35 @@
+{
+  "cv_elements":{
+    "cv_title": "Etudiant Alternant en Communication Web",
+    "cv_parts":{
+      "FORMATION":[
+        ["2018-2019", "Licence Professionnelle WEB : Web, E-commerce et Big-data", "IUT d'Aix-Marseille site d'Aix-en-Provence"],
+        ["2016-2018", "DUT informatique", "IUT de l’Université de Paul Sabatier (Toulouse)"],
+        ["2015-2016", "1°Année Ingénieure", "Institut National des Sciences Appliquées (Toulouse)"],
+        ["2014-2015", "Baccalauréat Technologique STI2D SIN (Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique)", "Lycée Général et Technologique de Mirepoix"]
+      ],
+      "EXPERIENCES PROFESSIONNELLES":[
+        ["2018-2019", "Chronoloisirs S.A.R.L : Alternance Licence Professionnelle (1 an)", "Detail"],
+        ["2018", "Chronoloisirs S.A.R.L : Stage IUT (3 mois) + CDD (2 mois)", "Detail"],
+        ["2016-2018", "Projet Tuteuré : ADELANTE SOLUTIONS", "Detail"]
+      ],
+      "COMPÉTENCES":[
+
+      ]
+    }
+  },
+  "personnal_info":{
+    "name": "Wilfried DIAS",
+    "adress1" : "7 square des romarins",
+    "adress2" : "09300 Villeneuve d'Olmes",
+    "email" : "wilfried.dias@hotmail.com",
+    "birthday" : 8,
+    "birthmonth" : 3,
+    "birthyear" : 1997,
+    "more_infos" : [
+      "Permis de conduire B",
+      "Véhicule Personnel",
+      "PSC1"
+    ]
+  }
+}
