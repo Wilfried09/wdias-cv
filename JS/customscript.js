@@ -10,41 +10,98 @@ function getJSON(path){
     xhr.send(null);
 }
 
+function calculateAge(data){
+  let birthdate = new Date(data.birthyear, data.birthmonth-1, data.birthday);
+  let today = new Date();
+  let age = today.getFullYear() - birthdate.getFullYear();
+  if(today.getMonth() == birthdate.getMonth()){
+    if(today.getDate() < birthdate.getDate()){
+      age = age - 1;
+    }
+  }else{
+    if(today.getMonth() < birthdate.getMonth()){
+      age = age - 1;
+    }
+  }
+  return age;
+}
+
+function getElement(id){
+  return document.getElementById(id);
+}
+
+function createStandardElement(tag, classe, texte){
+  let element = document.createElement(tag);
+  if(classe != undefined && classe != ''){
+    element.className = classe ;
+  }
+  if(texte != undefined && texte != ''){
+    let content = document.createTextNode(texte);
+    element.appendChild(content);
+  }
+  return element;
+}
+
+function bindElement(elementP, elementC){
+  elementP.appendChild(elementC);
+  return elementP;
+}
+
 function checkPage(data){
     console.log("/checkPage");
     if (typeof data == 'undefined') {
         getJSON('../JSON/cv.json');
     } else {
-        createPI(data.personnal_info);
-        createCvParts(data.cv_elements);
+      createAboutme(data.aboutme);
+      createCvParts(data.cv_elements);
     }
 }
 
-function createPI(data){
+function createAboutme(data){
+  console.log("/createAboutme");
+  let barLeft = getElement("barLeft");
+  let bloc = createStandardElement("div", "cv-aboutme-bloc", '')
+  createPI(bloc, data.part1);
+  createDev(bloc, data.part2);
+  barLeft = bindElement(barLeft, bloc);
+}
+
+function createPI(element, data){
     console.log("/createPI");
-    document.getElementById("cvName").innerHTML = data.name;
-    document.getElementById("adress1").innerHTML = data.adress1;
-    document.getElementById("adress2").innerHTML = data.adress2;
-    document.getElementById("email").innerHTML = data.email;
-    let birthdate = new Date(data.birthyear, data.birthmonth-1, data.birthday);
-    let today = new Date();
-    let age = today.getFullYear() - birthdate.getFullYear();
-    if(today.getMonth() == birthdate.getMonth()){
-      if(today.getDate() < birthdate.getDate()){
-        age = age - 1;
-      }
-    }else{
-      if(today.getMonth() < birthdate.getMonth()){
-        age = age - 1;
-      }
-    }
-    document.getElementById("age").innerHTML = age;
+    let title = createStandardElement("div", 'cv-left-title', data.profil);
+
+    let liste = createStandardElement("ul", "cv-personnal-info", '');
+
+    let name = createStandardElement("li", "cv-name", data.name);
+    liste = bindElement(liste, name);
+
+    let adress1 = createStandardElement("li", '', "Adresse : "+data.adress1);
+    liste = bindElement(liste, adress1);
+
+    let adress2 = createStandardElement("li", '', data.adress2);
+    liste = bindElement(liste, adress2);
+
+    let mail = createStandardElement("li", '', "Mail : "+data.email);
+    liste = bindElement(liste, mail);
+
+    let age = createStandardElement("li", '', "Age : "+calculateAge(data));
+    liste = bindElement(liste, age);
+
     for(i in data.more_infos){
-      let element = document.createElement("li");
-      let newContent = document.createTextNode(data.more_infos[i]);
-      element.appendChild(newContent);
-      document.getElementById("personnalInfo").appendChild(element);
+      let info = createStandardElement("li", '', data.more_infos[i]);
+      liste = bindElement(liste, info);
     }
+
+    let elementP = createStandardElement("div", '', '');
+    elementP = bindElement(elementP, title);
+    elementP = bindElement(elementP, liste);
+
+    element = bindElement(element, elementP);
+}
+
+function createDev(element, data){
+  console.log("/createDev");
+
 }
 
 function createCvParts(data){

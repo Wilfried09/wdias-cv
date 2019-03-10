@@ -50,9 +50,17 @@
     background-image: linear-gradient(to bottom, #0164cf, #0075dc, #0085e9, #0096f4, #00a6ff);
 }
 
-.cv-name {
-    font-size: 130%;
+.cv-left-title{
     font-weight: bold;
+    font-size: 130%;
+}
+
+.cv-aboutme-bloc{
+    padding: 0 2rem;
+}
+
+.cv-name {
+    font-size: 110%;
     padding: 0 0.5rem;
 }
 

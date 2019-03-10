@@ -12,24 +12,28 @@
         ["2018-2019", "Chronoloisirs S.A.R.L : Alternance Licence Professionnelle (1 an)", "Detail"],
         ["2018", "Chronoloisirs S.A.R.L : Stage IUT (3 mois) + CDD (2 mois)", "Detail"],
         ["2016-2018", "Projet Tuteuré : ADELANTE SOLUTIONS", "Detail"]
-      ],
-      "COMPÉTENCES":[
-
       ]
     }
   },
-  "personnal_info":{
-    "name": "Wilfried DIAS",
-    "adress1" : "7 square des romarins",
-    "adress2" : "09300 Villeneuve d'Olmes",
-    "email" : "wilfried.dias@hotmail.com",
-    "birthday" : 8,
-    "birthmonth" : 3,
-    "birthyear" : 1997,
-    "more_infos" : [
-      "Permis de conduire B",
-      "Véhicule Personnel",
-      "PSC1"
+  "aboutme":{
+    "part1":{
+      "profil": "PROFIL",
+      "name": "Wilfried DIAS",
+      "adress1" : "7 square des romarins",
+      "adress2" : "09300 Villeneuve d'Olmes",
+      "email" : "wilfried.dias@hotmail.com",
+      "birthday" : 8,
+      "birthmonth" : 3,
+      "birthyear" : 1997,
+      "more_infos" : [
+        "Permis de conduire B",
+        "Véhicule Personnel",
+        "PSC1"
+      ]
+    },
+    "part2":[
+        ["Systèmes d'exploitations", "Windows XP, 7, 8, 10 (Connaissances), Linux Ubuntu, Debian, Mint (Initiation)"],
+        ["HTML + CSS", "Web Design (Avancé)"]
     ]
   }
 }

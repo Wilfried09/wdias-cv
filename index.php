@@ -12,19 +12,12 @@
   <div class="head-footer-content">Curriculum Vitae</div>
   <div class="main-content">
       <div class="cv-content d-flex flex-row">
-        <div class="cv-bar-left">
+        <div id="barLeft" class="cv-bar-left">
           <div class="grey-line">
             <div class="cv-profil">
               <img src="../Ressources/profil.jpg" alt="Wilfried DIAS">
             </div>
           </div>
-          <div id="cvName" class="cv-name"></div>
-          <ul id="personnalInfo" class="cv-personnal-info">
-            <li>Adresse : <span id="adress1"></span></li>
-            <li><span id="adress2"></span></li>
-            <li>Mail : <span id="email"></span></li>
-            <li>Age : <span id="age"></span> ans</li>
-          </ul>
         </div>
         <div class="cv-body">
           <div id="cvTitle" class="cv-title grey-line"></div>
