@@ -63,6 +63,7 @@ function createAboutme(data){
   let bloc = createStandardElement("div", "cv-aboutme-bloc", '')
   createPI(bloc, data.part1);
   createDev(bloc, data.part2);
+  createDev(bloc, data.part3);
   barLeft = bindElement(barLeft, bloc);
 }
 
@@ -101,7 +102,26 @@ function createPI(element, data){
 
 function createDev(element, data){
   console.log("/createDev");
+  let titlePart = '';
+  if(data.competences != undefined){
+    titlePart = data.competences;
+  }else{
+    titlePart = data.langues;
+  }
 
+
+  let title = createStandardElement("div", 'cv-left-title', titlePart);
+  let liste = createStandardElement("ul", 'cv-personnal-info', '');
+  for(i in data.liste){
+    let competence = createStandardElement("li", '', data.liste[i][0]+" : "+ data.liste[i][1]);
+    liste = bindElement(liste, competence);
+  }
+
+  let elementP = createStandardElement("div", '', '');
+  elementP = bindElement(elementP, title);
+  elementP = bindElement(elementP, liste);
+
+  element = bindElement(element, elementP);
 }
 
 function createCvParts(data){

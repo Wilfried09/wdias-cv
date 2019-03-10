@@ -31,9 +31,20 @@
         "PSC1"
       ]
     },
-    "part2":[
-        ["Systèmes d'exploitations", "Windows XP, 7, 8, 10 (Connaissances), Linux Ubuntu, Debian, Mint (Initiation)"],
-        ["HTML + CSS", "Web Design (Avancé)"]
-    ]
+    "part2":{
+      "competences" : "DEVELOPPEMENT",
+      "liste":[
+        ["Systèmes d'exploitations", "Windows XP, 7, 8, 10 - Linux Ubuntu, Debian, Mint"],
+        ["Langages et Frameworks", "HTML, CSS, Javascript, JQuery, JSX, MYSQL, Java, PHP"]
+      ]
+    },
+    "part3":{
+      "langues" : "LANGUES ETRANGERES",
+      "liste":[
+        ["Anglais", "Avancé (B1)"],
+        ["Espagnol", "Intermédiaire (A2)"],
+        ["Portugais", "Notions"]
+      ]
+    }
   }
 }
