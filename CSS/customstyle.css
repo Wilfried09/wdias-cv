@@ -1,4 +1,31 @@
 /****TOOLTIP****/
+/*Visibilité*/
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+}
+
+.not-a-link{
+    color: white;
+}
+.not-a-link:hover{
+    color: white;
+}
+.not-a-link:visited{
+    color: white;
+}
+
 /*Position*/
 
 /*Width*/
@@ -32,9 +59,27 @@
 /*Custom Classes*/
 .head-footer-content {
     width: 100%;
-    background-color: black;
+    height: 2rem;
+    font-size: 110%;
     color: white;
     text-align: center;
+    background-color: black;
+}
+
+.head-footer-content img{
+    width: auto;
+}
+
+.working-site{
+    font-weight: bold;
+    background-color: orangered !important;
+}
+
+.alert-picto{
+    height: 95%;
+    background-color: white;
+    border-radius: 100%;
+    margin: 0 0.5rem;
 }
 
 .main-content {
@@ -62,6 +107,7 @@
 
 .cv-aboutme-bloc{
     padding: 0 2rem;
+    color: white;
 }
 
 .cv-name {
@@ -79,13 +125,19 @@
     border-left: 2px grey solid;
 }
 
-.cv-parts {
+.cv-part {
     padding: 0 1rem;
+    margin-bottom: 4rem;
 }
 
 .cv-part-title {
     font-size: 150%;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cv-part-content{
+    padding-left: 1rem;
 }
 
 .cv-line {
@@ -101,6 +153,10 @@
     width: 80%;
 }
 
+.cv-line-right-sublock{
+    margin: 0 0 2rem 0;
+}
+
 .cv-line-right-diploma {
     font-weight: bold;
 }
@@ -113,7 +169,7 @@
 .cv-title {
     color: white;
     width: 95%;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: bold;
     text-align: right;
     margin-bottom: 2rem !important;
@@ -135,6 +191,7 @@
     bottom: -100%;
     left: 15%;
     width: 70%;
+    border: 1px black dashed;
 }
 
 /*Targeted Classes*/

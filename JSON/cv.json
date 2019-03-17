@@ -1,44 +1,150 @@
 {
-  "cv_elements":{
+  "working_site" : true,
+  "content_right": {
     "cv_title": "Etudiant Alternant en Communication Web",
-    "cv_parts":{
-      "FORMATION":[
-        ["2018-2019", "Licence Professionnelle WEB : Web, E-commerce et Big-data", "IUT d'Aix-Marseille site d'Aix-en-Provence"],
-        ["2016-2018", "DUT informatique", "IUT de l’Université de Paul Sabatier (Toulouse)"],
-        ["2015-2016", "1°Année Ingénieure", "Institut National des Sciences Appliquées (Toulouse)"],
-        ["2014-2015", "Baccalauréat Technologique STI2D SIN (Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique)", "Lycée Général et Technologique de Mirepoix"]
-      ],
-      "EXPERIENCES PROFESSIONNELLES":[
-        ["2018-2019", "Chronoloisirs S.A.R.L : Alternance Licence Professionnelle (1 an)", "Detail"],
-        ["2018", "Chronoloisirs S.A.R.L : Stage IUT (3 mois) + CDD (2 mois)", "Detail"],
-        ["2016-2018", "Projet Tuteuré : ADELANTE SOLUTIONS", "Detail"]
-      ]
-    }
+    "formation": [
+      {
+        "date": "2018-2019",
+        "diploma": "Licence Professionnelle WEB : Web, E-commerce et Big-data",
+        "school": "IUT d'Aix-Marseille site d'Aix-en-Provence",
+        "link" : "https://iut.univ-amu.fr/sites/iut.univ-amu.fr/files/diplome/lp_devweb_2018w.pdf"
+      },
+      {
+        "date": "2016-2018",
+        "diploma": "DUT informatique",
+        "school": "IUT de l’Université de Paul Sabatier (Toulouse)",
+        "link" : "http://iut.ups-tlse.fr/medias/fichier/dut-info_1542291457405-pdf?ID_FICHE=13980&"
+
+      },
+      {
+        "date": "2015-2016",
+        "diploma": "1°Année Ingénieure",
+        "school": "Institut National des Sciences Appliquées (Toulouse)",
+        "link" : "https://fr.calameo.com/read/001057683b18a749a6041"
+
+      },
+      {
+        "date": "2014-2015",
+        "diploma": "Baccalauréat Technologique STI2D SIN (Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique)",
+        "school": "Lycée Général et Technologique de Mirepoix",
+        "link" : "http://www.lycee-mirepoix.fr/presentation-sti2d.html"
+
+      }
+    ],
+    "exppro": [
+      {
+        "date": "2018-2019",
+        "works": [
+          {
+            "titre": "Chronoloisirs S.A.R.L : Alternance Licence Professionnelle (1 an)",
+            "details": [
+              "Développement Web (JSX, REACT + NODE.JS, MOBIX)",
+              "Web Design (HTML, CSS, JAVASCRIPT, Photoshop, JQuery)"
+            ],
+            "link" : "https://www.chronocarpe.com/"
+          }
+        ]
+      },
+      {
+        "date": "2018",
+        "works": [
+          {
+            "titre": "Chronoloisirs S.A.R.L : Stage IUT (3 mois) + CDD (2 mois)",
+            "details": [
+              "Web Design (HTML, CSS, JAVASCRIPT, Photoshop)",
+              "Développement Web (JSX, REACT + NODE.JS)"
+            ],
+            "link" : "https://www.chronocarpe.com/"
+          }
+        ]
+      },
+      {
+        "date": "2016-2018",
+        "works": [
+          {
+            "titre": "Projet Tuteuré : ADELANTE SOLUTIONS",
+            "details": [
+              "Mise à jour d’un site web en équipe de projet (HTML, CSS, JAVASCRIPT, PHP)"
+            ],
+            "link" : "https://www.adelante-solutions.fr/"
+          },
+          {
+            "titre": "Projet Tuteuré : ORGANISATION D’UN TRIATHLON",
+            "details": [
+              "Organisation fictive d’un triathlon en équipe de projet (Gestion de projet avancée)"
+            ],
+            "link" : ""
+          },
+          {
+            "titre": "Projet Documentaire : LES ROBOTS SPATIAUX",
+            "details": [
+              "Création d'un Webdocumentaire sur un thème donné (Recherche Documentaire)"
+            ],
+            "link" : "https://app.racontr.com/projects/webdoc-19/"
+          }
+        ]
+      },
+      {
+        "date": "Août 2016",
+        "works": [
+          {
+            "titre": "ROMERA S.A.R.L Lavelanet : Stage conventionné et ouvrier (un mois)",
+            "details": [
+              "Logistique : mise en place des stocks en rayon et découverte de l'activité d'inventaire",
+              "Service client : à l'intérieur du magasin et dans le parc matériaux"
+            ],
+            "link" : "https://www.romera-sas.fr/"
+          }
+        ]
+      },
+      {
+        "date": "Avril 2016",
+        "works": [
+          {
+            "titre": "CAPGEMINI Toulouse : Demi-journée d'immersion avec un ingénieur en Génie Logiciel",
+            "details": [],
+            "link" : "https://www.capgemini.com/fr-fr/"
+          }
+        ]
+      },
+      {
+        "date": "2014-2015",
+        "works": [
+          {
+            "titre": "Projet STI2D : PANNEAU SOLAIRE AUTONOME",
+            "details": [
+              "Programmation d’un panneau solaire autonome (Bases de gestion de projet et d’électronique)"
+            ],
+            "link" : ""
+          }
+        ]
+      }
+    ]
   },
-  "aboutme":{
-    "part1":{
+  "bar_left": {
+    "part1": {
       "profil": "PROFIL",
       "name": "Wilfried DIAS",
-      "adress1" : "7 square des romarins",
-      "adress2" : "09300 Villeneuve d'Olmes",
-      "email" : "wilfried.dias@hotmail.com",
-      "birthday" : 8,
-      "birthmonth" : 3,
-      "birthyear" : 1997,
-      "more_infos" : [
+      "adress1": "7 square des romarins",
+      "adress2": "09300 Villeneuve d'Olmes",
+      "email": "wilfried.dias@hotmail.com",
+      "birthday": 8,
+      "birthmonth": 3,
+      "birthyear": 1997,
+      "more_infos": [
         "Permis de conduire B",
         "Véhicule Personnel",
         "PSC1"
       ]
     },
-    "part2":{
-      "competences" : "DEVELOPPEMENT",
-      "liste":{
-        "Systèmes d'exploitation":[
+    "part2": {
+      "competences": "DEVELOPPEMENT",
+      "liste": {
+        "Systèmes d'exploitation": [
           "Windows",
           "Linux"
         ],
-        "Langages et Frameworks":[
+        "Langages et Frameworks": [
           "HTML/CSS",
           "Javascript/JQuery",
           "JSX",
@@ -47,17 +153,26 @@
         ]
       }
     },
-    "part3":{
-      "langues" : "LANGUES ETRANGERES",
-      "liste":[
-        ["Anglais", "Avancé (B1)"],
-        ["Espagnol", "Intermédiaire (A2)"],
-        ["Portugais", "Notions"]
+    "part3": {
+      "langues": "LANGUES ETRANGERES",
+      "liste": [
+        [
+          "Anglais",
+          "Avancé (B1)"
+        ],
+        [
+          "Espagnol",
+          "Intermédiaire (A2)"
+        ],
+        [
+          "Portugais",
+          "Notions"
+        ]
       ]
     },
-    "part4":{
-      "hobbies" : "INTERETS",
-      "liste":[
+    "part4": {
+      "hobbies": "INTERETS",
+      "liste": [
         "Langues étrangères",
         "Programmation informatique",
         "High Tech & Nouvelles Technologies"
