@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="617027b3-ca5b-4bb3-ab76-cf1b43dcad79" name="alwaysdata" url="http://wilfried-dias-pro.alwaysdata.net">
-        <fileTransfer host="ssh-wilfried-dias-pro.alwaysdata.net" port="22" rootFolder="/home/wilfried-dias-pro/www" accessType="SFTP">
+      <webServer id="617027b3-ca5b-4bb3-ab76-cf1b43dcad79" name="alwaysdata" url="http://cookbook.alwaysdata.net">
+        <fileTransfer host="ssh-cookbook.alwaysdata.net" port="22" rootFolder="/home/cookbook/www" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

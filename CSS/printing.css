@@ -1,0 +1,243 @@
+@media print {
+    /****TOOLTIP****/
+    /*Visibilité*/
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .invisible {
+        opacity: 0;
+    }
+
+    .visible {
+        opacity: 1;
+    }
+
+    .not-a-link {
+        color: white;
+    }
+
+    .not-a-link:hover {
+        color: white;
+    }
+
+    .not-a-link:visited {
+        color: white;
+    }
+
+    /*Position*/
+    /*Width*/
+    .width-100 {
+        width: 100%;
+    }
+
+    .width-75 {
+        width: 75%;
+    }
+
+    .width-50 {
+        width: 50%;
+    }
+
+    .width-25 {
+        width: 25%;
+    }
+
+    /*Height*/
+    .height-100 {
+        height: 100%;
+    }
+
+    /*Padding*/
+    .padding-standard-left {
+        padding-left: 1rem;
+    }
+
+    /****CLASSES****/
+    /*Custom Classes*/
+    .head-footer-content {
+        display: none;
+    }
+
+    .head-footer-content img {
+        width: auto;
+    }
+
+    .working-site {
+        font-weight: bold;
+        background-color: orangered !important;
+    }
+
+    .alert-picto {
+        height: 95%;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 0.5rem;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 2px grey solid;
+        border-right: 2px grey solid;
+    }
+
+    .cv-content {
+    }
+
+    .cv-bar-left {
+        width: 30%;
+        font-size: 130%;
+        padding: 2rem 0;
+        background-image: linear-gradient(to bottom, #0071d2, #2f7cda, #4787e2, #5a92ea, #6b9ef2, #6b9ef2, #6b9ef2, #6b9ef2, #5a92ea, #4787e2, #2f7cda, #0071d2);    }
+
+    .cv-left-title {
+        font-weight: bold;
+        font-size: 130%;
+    }
+
+    .cv-aboutme-bloc {
+        padding: 0 2rem;
+        color: white;
+    }
+
+    .cv-name {
+        font-size: 110%;
+    }
+
+    .cv-personnal-info {
+        font-size: 80%;
+        padding: 0 0.5rem;
+    }
+
+    .cv-body {
+        width: 75%;
+        padding: 2rem 0;
+        border-left: 2px grey solid;
+    }
+
+    .cv-part {
+        padding: 0 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .cv-part-title {
+        font-size: 150%;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .cv-part-content {
+        padding-left: 1rem;
+    }
+
+    .cv-line {
+        margin: 0.5rem 0;
+        line-height: 1rem;
+    }
+
+    .cv-line-left {
+        width: 20%;
+    }
+
+    .cv-line-right {
+        width: 80%;
+    }
+
+    .cv-line-right-sublock {
+        margin: 0 0 2rem 0;
+    }
+
+    .cv-line-right-diploma {
+        font-weight: bold;
+    }
+
+    .cv-line-right-school {
+        font-style: italic;
+        font-size: 90%;
+    }
+
+    .cv-title {
+        color: white;
+        width: 95%;
+        font-size: 150%;
+        font-weight: bold;
+        text-align: right;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .grey-line {
+        position: relative;
+        color: white;
+        background-color: grey;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        height: 5rem;
+        padding: 1rem;
+    }
+
+    .cv-profil {
+        position: absolute;
+        bottom: -100%;
+        left: 15%;
+        width: 70%;
+    }
+
+    /*Targeted Classes*/
+    @page{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        size: A4 portrait;
+    }
+
+    html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        width: 100%!important;
+        height: 100%!important;
+        background-image: none;
+        margin: 0!important;
+        background-color: #fff!important;
+        color: #000!important;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cv-body a{
+        text-decoration: none!important;
+        color: black!important;
+    }
+    .cv-body a:hover{
+        text-decoration: none!important;
+        color: black!important;
+    }
+
+    .cv-bar-left a{
+        text-decoration: none!important;
+        color: white!important;
+    }
+    .cv-bar-left a:hover{
+        text-decoration: none!important;
+        color: white!important;
+    }
+}

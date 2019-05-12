@@ -1,5 +1,5 @@
 function createBarLeft(data) {
-    console.log("/createBarLeft");
+    disp("/createBarLeft");
     let barLeft = getElement("barLeft");
     let bloc = createStandardElement("div", "cv-aboutme-bloc", '')
 
@@ -19,7 +19,7 @@ function createBarLeft(data) {
 }
 
 function createPI(data) {
-    console.log("/createPI");
+    disp("/createPI");
     let title = createStandardElement("div", 'cv-left-title', data.profil);
 
     let liste = createStandardElement("ul", "cv-personnal-info", '');
@@ -54,7 +54,7 @@ function createPI(data) {
 }
 
 function createDev(data) {
-    console.log("/createDev");
+    disp("/createDev");
     let title = createStandardElement("div", 'cv-left-title', data.competences);
 
     let liste = createStandardElement("ul", 'cv-personnal-info', '');
@@ -75,7 +75,7 @@ function createDev(data) {
 }
 
 function createLang(data) {
-    console.log("/createLang");
+    disp("/createLang");
     let linkTitle = createStandardElement("a", 'not-a-link', '', "https://www.france-langue.fr/niveaux-de-francais/")
     let title = createStandardElement("div", 'cv-left-title', data.langues);
     linkTitle = bindElement(linkTitle, title);
@@ -94,7 +94,7 @@ function createLang(data) {
 }
 
 function createHobbies(data) {
-    console.log("/createHobbies");
+    disp("/createHobbies");
     let title = createStandardElement("div", 'cv-left-title', data.hobbies);
 
     let liste = createStandardElement("ul", 'cv-personnal-info', '');

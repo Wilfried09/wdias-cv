@@ -21,12 +21,19 @@
 }
 .not-a-link:hover{
     color: white;
+    text-decoration: none;
 }
 .not-a-link:visited{
     color: white;
+    text-decoration: none;
+
 }
 
 /*Position*/
+.centered-text{
+    text-align: center;
+}
+
 
 /*Width*/
 .width-100 {
@@ -55,6 +62,15 @@
     padding-left: 1rem;
 }
 
+/*Style*/
+.font-bold{
+    font-weight: bold;
+}
+
+.font-red{
+    color: red;
+}
+
 /****CLASSES****/
 /*Custom Classes*/
 .head-footer-content {
@@ -72,7 +88,7 @@
 
 .working-site{
     font-weight: bold;
-    background-color: orangered !important;
+    background-color: orangered!important;
 }
 
 .alert-picto{
@@ -87,120 +103,122 @@
     background-color: rgba(255, 255, 255, 0.85);
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem 2rem;
     border-left: 2px grey solid;
     border-right: 2px grey solid;
 }
 
-.cv-content {
-}
-
-.cv-bar-left {
-    width: 25%;
-    padding: 0.5rem 0;
-    background-image: linear-gradient(to bottom, #0164cf, #0075dc, #0085e9, #0096f4, #00a6ff);
-}
-
-.cv-left-title{
-    font-weight: bold;
-    font-size: 130%;
-}
-
-.cv-aboutme-bloc{
-    padding: 0 2rem;
-    color: white;
-}
-
-.cv-name {
-    font-size: 110%;
-}
-
-.cv-personnal-info {
-    font-size: 80%;
-    padding: 0 0.5rem;
-}
-
-.cv-body {
-    width: 75%;
-    padding: 0.5rem 0;
-    border-left: 2px grey solid;
-}
-
-.cv-part {
-    padding: 0 1rem;
-    margin-bottom: 4rem;
-}
-
-.cv-part-title {
-    font-size: 150%;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.cv-part-content{
-    padding-left: 1rem;
-}
-
-.cv-line {
-    margin: 0.5rem 0;
-    line-height: 1rem;
-}
-
-.cv-line-left {
-    width: 20%;
-}
-
-.cv-line-right {
-    width: 80%;
-}
-
-.cv-line-right-sublock{
-    margin: 0 0 2rem 0;
-}
-
-.cv-line-right-diploma {
-    font-weight: bold;
-}
-
-.cv-line-right-school {
-    font-style: italic;
-    font-size: 90%;
-}
-
-.cv-title {
-    color: white;
-    width: 95%;
-    font-size: 150%;
-    font-weight: bold;
-    text-align: right;
-    margin-bottom: 2rem !important;
-    border-radius: 0 10px 10px 0;
-}
-
-.grey-line {
+.recipe-block{
     position: relative;
-    color: white;
-    background-color: grey;
-    margin-top: 7rem;
-    margin-bottom: 6rem;
-    height: 5rem;
-    padding: 1rem;
+    width: 15rem;
+    border: 1px black solid;
+    overflow: hidden;
+    margin: auto;
+    cursor:pointer;
 }
 
-.cv-profil {
+.recipe-block:hover{
+    opacity:0.8;
+}
+
+.recipe-block-title{
     position: absolute;
-    bottom: -100%;
-    left: 15%;
-    width: 70%;
-    border: 1px black dashed;
+    text-align: center;
+    background-color: white;
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#recipeSelection{
+    display:none;
+}
+
+#requestSelection{
+    display:none;
+}
+
+.clickableMenu{
+    width: 5rem;
+    cursor:pointer;
+}
+.clickableMenu:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.admin-header .clickableMenu{
+    width: auto;
+    padding: 0 0.2rem;
+}
+
+.ingredient-list-item{
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.step-list-item{
+    width: 100%;
+    margin: 1rem;
+}
+
+.recipeShot{
+    width : 50%;
+    margin: 2rem auto;
+    border: 1px grey solid;
+    border-radius: 3px;
+}
+
+.admin-form-container{
+    padding: 1rem;
+    width: 50%;
+    height: 50%;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.admin-form{
+    width: 75%;
+    height: 75%;
+    margin: 1rem auto;
+}
+
+.admin-page{
+    width: 75%;
+    margin: auto;
+}
+
+.admin-page input{
+    height: 100%;
+}
+
+.admin-ul{
+    width: 75%;
+    margin: auto;
+}
+
+.admin-li{
+    background-color: lightgrey;
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+.btn-modify{
+    margin: 0;
+    padding: 0;
 }
 
 /*Targeted Classes*/
 body {
-    background-image: url("../Ressources/background.jpg");
+    background-image: url("../Ressources/home-bg.jpeg");
     background-position: top;
     background-attachment: fixed;
     background-size: 100%;
     margin: 0;
+}
+
+h1{
+    text-align:center;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -211,4 +229,12 @@ ul {
 img {
     height: 100%;
     width: 100%;
+}
+
+input{
+    padding: 0.2rem;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px lightgrey solid;
+    margin: 0.2rem 0;
 }

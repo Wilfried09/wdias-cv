@@ -1,5 +1,5 @@
 function createContentRight(data) {
-    console.log("/createCvContent");
+    disp("/createCvContent");
     let body = getElement("cvBody");
     let title = createStandardElement("div", "cv-title grey-line", data.cv_title)
     let formation = createFormation(data.formation);
@@ -11,7 +11,7 @@ function createContentRight(data) {
 }
 
 function createFormation(data) {
-    console.log("/createFormation");
+    disp("/createFormation");
     let formation = createStandardElement("div", "cv-part d-flex flex-column");
 
     let title = createStandardElement("div", "cv-part-title", "FORMATION");
@@ -42,7 +42,7 @@ function createFormation(data) {
 }
 
 function createExperience(data) {
-    console.log("/createExperience");
+    disp("/createExperience");
     let experience = createStandardElement("div", "cv-part d-flex flex-column");
 
     let title = createStandardElement("div", "cv-part-title", "EXPERIENCES PROFESSIONNELLES");
